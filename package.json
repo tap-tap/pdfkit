@@ -40,8 +40,9 @@
     "png-js": ">=0.1.0"
   },
   "scripts": {
-    "prepublish": "make js",
-    "postpublish": "make clean"
+    "prepare": "make js",
+    "postpublish": "make clean",
+    "postinstall": "make clean"
   },
   "main": "js/document",
   "browserify": {
